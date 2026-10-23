@@ -18,7 +18,7 @@ source "${project_path}/.env"
 set +a
 
 # if no $DATABASE_URL is found then abort
-# make sure .env file contains a $DATABASE_URL field in it or change it to whatever you like
+# make sure .env file contains a $DATABASE_URL field
 if [[ -z "${DATABASE_URL:-}" ]]; then
   echo "Error: DATABASE_URL is not set." >&2
   exit 1
